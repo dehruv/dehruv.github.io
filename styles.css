@@ -1,0 +1,130 @@
+:root {
+    --text: #232323;
+    --background: #ffffff;
+    --accent1: #C34A2C; /* Rust Orange */
+    --accent2: #A33E24; /* Darker Rust Orange for contrast */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background-color: var(--background);
+    text-decoration: none;
+    font-family: "Sometype Mono";
+}
+
+
+
+.taskbar {
+    margin-right: auto;
+    padding-top: 2.5rem;
+    padding-bottom: 1rem;
+}
+
+.bhr {
+    color: var(--accent1);
+    font-size: 4.5rem;
+}
+
+.about {
+    font-size: 1.25rem;
+}
+
+.proj-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-right: auto;
+    padding-top: 1.5rem;
+}
+
+
+.proj-header {
+    padding-top: 0.1rem;
+    padding-bottom: 0.5rem;
+    font-size: 1.3rem;
+    font-style: italic;
+    background-color: white;
+    transition: background-color 0.3s ease;
+}
+
+.proj-box:hover .proj-header,
+.proj-box:hover .proj-content {
+    background-color: rgba(223, 66, 27, 0.164);
+}
+
+.proj-text {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items:flex-start;
+    row-gap: 1.5rem;
+    max-width: 48%;
+}
+
+.proj-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    overflow: hidden;
+    border-style: solid;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0px 10px 30px rgba(150, 150, 150, 0.2);
+    transition: all 0.3s ease;
+}
+
+.proj-box:hover {
+    transform: scale(1.02); 
+    box-shadow: 0px 15px 40px rgba(150, 150, 150, 0.3); 
+    background-color: rgba(223, 66, 27, 0.164);
+}
+.proj-header,
+.proj-content,
+.proj-link {
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.proj-content {
+    font-size: 1.05rem;
+    background-color: white;
+    transition: background-color 0.3s ease;
+}
+
+.proj-img {
+    object-fit: cover;
+    overflow: hidden;
+    max-width: fit-content;
+    max-height: 20vh;
+    max-width: 35;
+}
+    
+hr {
+    display: block;
+    height: 2px;
+    border: 0;
+    border-top: 2px solid #3f3d3d;
+    margin: 1em 0;
+    padding: 0;
+}
+
+.proj-link:visited {
+    color: inherit; /* Inherit color from parent or set to any desired color */
+    text-decoration: none; /* Remove underline or other text decorations */
+}
